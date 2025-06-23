@@ -3,16 +3,16 @@ using namespace std;
 
 int count = 0 ;
 
-int recursion () {
-    if(::count == 9 ) return ::count ;
+void recursion () {
+    if(::count == 9 ) return ; // Base Case 
     ::count++;
     cout << ::count ;
-    cout << recursion();
+    recursion(); // recursive call
 }
 
 int main() {
     cout << "Hello, DSA World!" << endl;
-    cout << recursion();
+    recursion();
     return 0;
 }
 
